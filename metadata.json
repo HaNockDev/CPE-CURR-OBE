@@ -1,0 +1,8 @@
+{
+  "name": "ระบบบริหารจัดการ มคอ.3 สาขาวิศวกรรมคอมพิวเตอร์",
+  "description": "ระบบจัดการเอกสาร มคอ.3 และการวิเคราะห์หลักสูตรตามมาตรฐาน OBE สำหรับสาขาวิศวกรรมคอมพิวเตอร์",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

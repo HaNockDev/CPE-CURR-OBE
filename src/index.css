@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Inter:wght@400;500;600;700;800;900&family=Prompt:wght@100;200;300;400;500;600;700;800;900&family=Sarabun:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Anuphan", "Inter", "Sarabun", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Anuphan", "Prompt", sans-serif;
+  --font-print: "Sarabun", serif;
+  
+  /* Fallback hex colors for html2canvas compatibility */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  --color-blue-50: #eff6ff;
+  --color-blue-100: #dbeafe;
+  --color-blue-200: #bfdbfe;
+  --color-blue-500: #3b82f6;
+  --color-blue-600: #2563eb;
+  --color-blue-700: #1d4ed8;
+
+  --color-indigo-50: #eef2ff;
+  --color-indigo-100: #e0e7ff;
+  --color-indigo-500: #6366f1;
+  --color-indigo-600: #4f46e5;
+
+  --color-red-50: #fef2f2;
+  --color-red-400: #f87171;
+  --color-red-500: #ef4444;
+  --color-red-600: #dc2626;
+
+  --color-amber-400: #fbbf24;
+  --color-amber-500: #f59e0b;
+
+  --color-green-500: #22c55e;
+  --color-green-600: #16a34a;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F5F5F7] text-[#111111] antialiased font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight text-[#000000];
+  }
+
+  label {
+    @apply font-sans;
+    font-size: 13px !important;
+  }
+
+  input, textarea, select {
+    @apply font-sans text-black;
+  }
+}
+
+.markdown-container {
+  @apply font-print text-[#000000];
+}
+
+.markdown-container table {
+  @apply w-full border-collapse border border-gray-400 my-6 text-sm text-[#000000];
+}
+
+.markdown-container th {
+  @apply bg-gray-100 border border-gray-400 px-4 py-2 text-left font-bold text-[#000000];
+}
+
+.markdown-container td {
+  @apply border border-gray-400 px-4 py-2 align-top text-[#000000];
+}
+
+.markdown-container h1 {
+  @apply text-3xl font-bold mb-8 text-center text-[#000000] border-b pb-4;
+}
+
+.markdown-container h2 {
+  @apply text-xl font-bold mt-12 mb-6 text-[#000000] bg-gray-200 p-3 rounded;
+}
+
+.markdown-container h3 {
+  @apply text-lg font-bold mt-8 mb-4 text-[#000000];
+}
+
+.markdown-container ul {
+  @apply list-disc list-inside space-y-2 my-4;
+}
+
+.markdown-container p {
+  @apply my-2;
+}
